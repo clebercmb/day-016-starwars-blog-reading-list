@@ -11,17 +11,13 @@
 		"deploy": "node deploy-to-github.js"
 	},
 	"author": {
-		"name": "Alejandro Sanchez",
-		"url": "http://alesanchezr.com/"
+		"name": "Cleber Miranda Barbosa",
+		"url": "https://github.com/clebercmb"
 	},
 	"contributors": [
 		{
-			"name": "Alejandro Sanchez",
-			"url": "http://alesanchezr.com/"
-		},
-		{
-			"name": "Ignacio Cordoba",
-			"url": "http://github.com/nachovz"
+			"name": "Cleber Miranda Barbosa",
+			"url": "https://github.com/clebercmb"
 		}
 	],
 	"license": "ISC",
@@ -54,7 +50,7 @@
 		"remote-origin-url": "^1.0.0",
 		"sass-loader": "^6.0.6",
 		"style-loader": "^0.19.0",
-		"webpack": "^4.0.1",
+		"webpack": "^4.41.4",
 		"webpack-cli": "^3.3.0",
 		"webpack-dev-server": "^3.3.1",
 		"webpack-merge": "^4.2.1"
@@ -70,6 +66,8 @@
 	},
 	"dependencies": {
 		"bootstrap": "^4.3.1",
+		"jquery": "^3.4.1",
+		"popper.js": "^1.16.0",
 		"prop-types": "^15.6.1",
 		"react": "^16.8.4",
 		"react-dom": "^16.8.4",
