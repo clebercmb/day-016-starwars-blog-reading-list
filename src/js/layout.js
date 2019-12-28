@@ -15,17 +15,18 @@ import { Footer } from "./component/footer";
 - Navbar
 - SearchBar
 - TitleBar 1
-- CharacterDetailList
-- 	CharacterDetail 1
--   CharacterDetail 2
+- CardBellowContentList
+- 	CardBellowContent 1
+-   CardBellowContent 2
 	...
 -	CharacterDetail n
 - TitleBar 2  (Cleber)
+- 
 - LatestList
--   Card
--	Latest 1
-- 	Latest 2
--	Latest 3
+- 	CardResource 
+-	CardRightContent 1
+- 	CardRightContent 2
+-	CardRightContent 3
 - TitleBar 3
 
 
