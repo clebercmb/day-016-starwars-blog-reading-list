@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
 
-import { Home } from "./views/home";
+import Home from "./views/home";
 import { Demo } from "./views/demo";
 import { Single } from "./views/single";
 import injectContext from "./store/appContext";
@@ -11,7 +11,7 @@ import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
 
 /* Components:
-- Header (Cleber)
+- Header (Oliver)
 - Navbar
 - SearchBar
 - TitleBar 1
@@ -20,7 +20,7 @@ import { Footer } from "./component/footer";
 -   CharacterDetail 2
 	...
 -	CharacterDetail n
-- TitleBar 2  (Oliver)
+- TitleBar 2  (Cleber)
 - LatestList
 -   Card
 -	Latest 1
@@ -42,6 +42,7 @@ export const Layout = () => {
 			<BrowserRouter>
 				<ScrollToTop>
 					<Navbar />
+
 					<Switch>
 						<Route exact path="/" component={Home} />
 						<Route path="/demo" component={Demo} />
