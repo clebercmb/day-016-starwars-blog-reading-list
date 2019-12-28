@@ -10,6 +10,27 @@ import injectContext from "./store/appContext";
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
 
+/* Components:
+- Header (Cleber)
+- Navbar
+- SearchBar
+- TitleBar 1
+- CharacterDetailList
+- 	CharacterDetail 1
+-   CharacterDetail 2
+	...
+-	CharacterDetail n
+- TitleBar 2  (Oliver)
+- LatestList
+-   Card
+-	Latest 1
+- 	Latest 2
+-	Latest 3
+- TitleBar 3
+
+
+*/
+
 //create your first component
 export const Layout = () => {
 	//the basename is used when your project is published in a subdirectory and not in the root of the domain
