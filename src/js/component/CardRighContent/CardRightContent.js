@@ -8,7 +8,7 @@ function CardRightContent(props) {
 			<div className="cardRightContent-img">
 				<img src={props.img} className="" alt="..." />
 			</div>
-			<div className="">
+			<div className="content">
 				<h6 className="card-title">{props.title}</h6>
 
 				<a href="/#" className="dataBank">
