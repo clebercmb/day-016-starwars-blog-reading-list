@@ -7,7 +7,6 @@ import CardLatestList from "../component/CardLatestList/CardLatestList";
 
 const Home = () => (
 	<div className="text-center mt-5">
-		<TitleBar title="THE LATEST //" />
 		<CardLatestList title="CardLatestList" />
 	</div>
 );

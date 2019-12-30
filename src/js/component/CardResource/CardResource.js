@@ -4,11 +4,11 @@ import "./CardResource.css";
 
 function CardResource(props) {
 	return (
-		<div className="card cardResource ">
+		<div className="card cardResource">
 			<img src={props.img} className="card-img-top" alt="..." />
 			<div className="card-body">
-				<h5 className="card-title">{props.title}</h5>
-				<p className="card-text">{props.description}</p>
+				<h6 className="card-title">{props.title}</h6>
+
 				<a href="/#" className="dataBank">
 					DATABANK
 				</a>

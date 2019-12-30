@@ -2,8 +2,26 @@
 
     background: #282727;
     color: #ddd;
+
+    /*border: 2px solid green;*/
+    width:500px;
+    height:90px;
+    margin: 10px;
+
 }
 
 .dataBank{
     color:#9e4f60;
+}
+
+.cardRightContent-img {
+    height:inherit;
+    width: 33%;
+}
+
+
+.cardRightContent-img img {
+    width: 184px;
+    height: 100%;
+    display: block; /* remove extra space below image */
 }

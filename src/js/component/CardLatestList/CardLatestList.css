@@ -1,5 +1,29 @@
-.custom {
-    height: 450px;
+
+.cardLatestList {
+    max-height: 440px;
+    max-width: 1024px;
+    margin: 0 auto;
+    background: gray;
+    padding: 0;
+        /*display:flex;
+    flex-direction:column;*/
+}
+
+
+
+.listCards {
+    width: 50%;
+    max-height: 330px;
+    margin: 0;
+    padding: 0;
+}
+
+
+.parent {
+    height:510px;
+    width:500px;
+    /*display:flex;
+    flex-direction:column;*/
 }
 
 .custom-card {

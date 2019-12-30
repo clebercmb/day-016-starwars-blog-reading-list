@@ -4,12 +4,12 @@ import "./CardRightContent.css";
 
 function CardRightContent(props) {
 	return (
-		<div className="card row d-flex flex-row cardRightContent">
-			<div className="col">
-				<img src={props.img} className="img-fluid" alt="..." />
+		<div className="card d-flex flex-wrap cardRightContent">
+			<div className="cardRightContent-img">
+				<img src={props.img} className="" alt="..." />
 			</div>
-			<div className="col">
-				<h5 className="card-title">{props.title}</h5>
+			<div className="">
+				<h6 className="card-title">{props.title}</h6>
 
 				<a href="/#" className="dataBank">
 					DATABANK
@@ -26,3 +26,20 @@ CardRightContent.propTypes = {
 };
 
 export default CardRightContent;
+
+/*
+
+		<div className="card cardRightContent">
+			<div className="half image-left">
+				<img src={props.img} className="" alt="..." />
+			</div>
+			<div className="">
+				<h6 className="card-title">{props.title}</h6>
+
+				<a href="/#" className="dataBank">
+					DATABANK
+				</a>
+			</div>
+		</div>
+
+*/
