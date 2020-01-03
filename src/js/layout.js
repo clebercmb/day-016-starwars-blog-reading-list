@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 import Home from "./views/home";
 import { Demo } from "./views/demo";
@@ -8,8 +9,9 @@ import { Single } from "./views/single";
 import Resources from "./views/resources";
 import injectContext from "./store/appContext";
 
-import { Navbar } from "./component/navbar";
+import Header from "./component/Header/Header";
 import { Footer } from "./component/footer";
+import NavBar from "./component/navbar/Navbar";
 
 /* Components:
 - Header (Oliver)
@@ -20,7 +22,7 @@ import { Footer } from "./component/footer";
 - 	CardBellowContent 1
 -   CardBellowContent 2
 	...
--	CharacterDetail n
+-	CardBellowContent n
 - TitleBar 2  (Cleber)
 - 
 - LatestList
@@ -43,8 +45,8 @@ export const Layout = () => {
 		<div className="d-flex flex-column h-100">
 			<BrowserRouter>
 				<ScrollToTop>
-					<Navbar />
-
+					<Header />
+					<NavBar />
 					<Switch>
 						<Route exact path="/" component={Home} />
 						<Route path="/demo" component={Demo} />
