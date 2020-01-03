@@ -1,0 +1,19 @@
+.cardResource {
+    height: 330px;
+    width: 220px;
+    background: #282727;
+    color: #ddd;
+    margin: 10px;
+}
+
+.cardResource img {
+    max-height: 200px;
+}
+
+.dataBank {
+    color:#9e4f60
+}
+
+.description {
+    color: #898989
+}
