@@ -15,5 +15,7 @@
 
 /*  32PX*/
 .titleBar h5 {
+    position: relative;
     margin: 0;
+    text-align: left;
 }

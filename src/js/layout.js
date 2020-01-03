@@ -6,6 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./views/home";
 import { Demo } from "./views/demo";
 import { Single } from "./views/single";
+import Resources from "./views/resources";
 import injectContext from "./store/appContext";
 
 import Header from "./component/Header/Header";
@@ -50,6 +51,7 @@ export const Layout = () => {
 						<Route exact path="/" component={Home} />
 						<Route path="/demo" component={Demo} />
 						<Route path="/single/:theid" component={Single} />
+						<Route path="/resources" component={Resources} />
 						<Route render={() => <h1>Not found!</h1>} />
 					</Switch>
 					<Footer />
