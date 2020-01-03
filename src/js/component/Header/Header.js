@@ -54,9 +54,6 @@ function Header() {
 							placeholder="Search"
 							aria-label="Search"
 						/>
-						<span className="input-group-addon">
-							<faSearch icon={faSearch} />
-						</span>
 					</div>
 					<div id="login">
 						<ul>
