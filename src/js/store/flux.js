@@ -169,15 +169,26 @@ const getState = ({ getStore, getActions, setStore }) => {
 					fetch().then().then(data => setStore({ "foo": data.bar }))
 				*/
 			},
+
 			getPeople: () => {
-				console.log("getPeople");
+				getActions().getFech("people", "https://swapi.co/api/people/");
 			},
 			getPlanets: () => {
 				console.log("getPlanets");
+				getActions().getFech("planets", "https://swapi.co/api/planets/");
 			},
 			getVehicles: () => {
 				console.log("getVehicles");
+				getActions().getFech("vehicles", "https://swapi.co/api/vehicles/");
 			},
+
+			getFech: (character, url) => {
+				console.log("getCharacter");
+				fetch(url)
+					.then(resp => resp.json())
+					.then(data => setStore({ [character]: data }));
+			},
+
 			changeColor: (index, color) => {
 				//get the store
 				const store = getStore();

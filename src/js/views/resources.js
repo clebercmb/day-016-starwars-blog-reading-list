@@ -16,6 +16,26 @@ import "../../styles/resources.css";
 const Resources = props => {
 	const { store, actions } = useContext(Context);
 
+	console.log("&=*******");
+	console.log(store.people.results);
+
+	let people =
+		!!store.people.results &&
+		store.people.results.map(element => {
+			return (
+				<Resource
+					key={element.name}
+					title={element.name}
+					img={
+						element.name
+							.split(" ")
+							.join("_")
+							.toLowerCase() + ".jpg"
+					}
+				/>
+			);
+		});
+
 	return (
 		<div className="resources">
 			<div className="text-center mt-5r">
@@ -23,42 +43,7 @@ const Resources = props => {
 			</div>
 
 			<div className="d-flex flex-wrap">
-				<div className="d-flex flex-wrap">
-					<Resource
-						img="https://lumiere-a.akamaihd.net/v1/images/ax-tagrin-ship-main_d5f72bb1.jpeg?region=0%2C0%2C1280%2C720&width=600"
-						title="DALKOR DAGGER"
-						description="Some quick example text to build on the card title and make up the bulk of the cards content."
-					/>
-					<Resource
-						img="https://lumiere-a.akamaihd.net/v1/images/ax-tagrin-ship-main_d5f72bb1.jpeg?region=0%2C0%2C1280%2C720&width=600"
-						title="DALKOR DAGGER"
-						description="Some quick example text to build on the card title and make up the bulk of the cards content."
-					/>
-
-					<Resource
-						img="https://lumiere-a.akamaihd.net/v1/images/ax-tagrin-ship-main_d5f72bb1.jpeg?region=0%2C0%2C1280%2C720&width=600"
-						title="DALKOR DAGGER"
-						description="Some quick example text to build on the card title and make up the bulk of the cards content."
-					/>
-
-					<Resource
-						img="https://lumiere-a.akamaihd.net/v1/images/ax-tagrin-ship-main_d5f72bb1.jpeg?region=0%2C0%2C1280%2C720&width=600"
-						title="DALKOR DAGGER"
-						description="Some quick example text to build on the card title and make up the bulk of the cards content."
-					/>
-
-					<Resource
-						img="https://lumiere-a.akamaihd.net/v1/images/ax-tagrin-ship-main_d5f72bb1.jpeg?region=0%2C0%2C1280%2C720&width=600"
-						title="DALKOR DAGGER"
-						description="Some quick example text to build on the card title and make up the bulk of the cards content."
-					/>
-
-					<Resource
-						img="https://lumiere-a.akamaihd.net/v1/images/ax-tagrin-ship-main_d5f72bb1.jpeg?region=0%2C0%2C1280%2C720&width=600"
-						title="DALKOR DAGGER"
-						description="Some quick example text to build on the card title and make up the bulk of the cards content."
-					/>
-				</div>
+				<div className="d-flex flex-wrap">{people}</div>
 			</div>
 		</div>
 	);

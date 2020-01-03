@@ -7,7 +7,9 @@
 }
 
 .cardResource img {
-    max-height: 200px;
+    height: 200px;
+    object-fit: cover;
+
 }
 
 .dataBank {

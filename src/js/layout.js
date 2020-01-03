@@ -23,7 +23,7 @@ import NavBar from "./component/navbar/Navbar";
 -   CardBellowContent 2
 	...
 -	CardBellowContent n
-- TitleBar 2  (Cleber)
+- TitleBar 2	  (Cleber)
 - 
 - LatestList
 - 	CardResource 
