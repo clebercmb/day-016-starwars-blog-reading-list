@@ -1,0 +1,69 @@
+#divHeader{
+    border-bottom: thistle;
+}
+.bg-light {
+    background-image: url('https://i.ibb.co/JrgsmBt/universo.jpg');
+    height: 150px;
+}    
+#search{
+    color: #FFFFFF;
+    background-color:grey;
+     opacity:0.3; /* Opacidad 60% */
+     margin-bottom: 0px;
+     height: 30px;
+    
+}
+input.form-control::placeholder {
+    color: white;
+}
+form{
+    margin-right: 50px;
+    margin-top: 20px;
+}
+.navbar-brand{
+    display: contents;
+    align-content: center;
+    justify-content: center;
+}
+img{
+    height: 120px;
+    width: 250px;
+    margin-right: 60px;
+    margin-bottom: auto;
+}
+#kids {
+    font-size: 1em;
+    color: #E3DDDD;
+}
+span{
+    color: #E3DDDD;
+    font-size: 2em;
+    font-weight: 100;
+}
+#socialDiv{
+    margin-bottom:auto  ;
+}
+#socialDiv li{
+    
+   list-style-type: none;
+   display: inline;
+   padding-right: 5px;
+   margin-left: 5px;
+    margin-right: 5px;
+}
+
+#login li{
+    list-style-type: none;
+   display: inline;
+
+}
+#loginLi{
+    margin-left: 45px;
+}
+
+#signout{
+    width: 80px;
+}
+#separator{
+    width: 20px;
+}
