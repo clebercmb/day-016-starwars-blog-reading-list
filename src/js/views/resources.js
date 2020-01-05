@@ -36,6 +36,15 @@ const Resources = props => {
 			);
 		});
 
+	let hasPrevious = store.people.previous != null;
+	let hasNext = store.people.next != null;
+
+	console.log("%%%%%%%");
+	console.log(store.people.previous);
+	console.log(hasPrevious);
+	console.log(store.people.next);
+	console.log(hasNext);
+
 	return (
 		<div className="resources">
 			<div className="text-center mt-5r">
@@ -44,6 +53,25 @@ const Resources = props => {
 
 			<div className="d-flex flex-wrap">
 				<div className="d-flex flex-wrap">{people}</div>
+			</div>
+
+			<div className="d-flex justify-content-between">
+				<button
+					type="button"
+					className="btn btn-light"
+					onClick={e => {
+						actions.getPeople(store.people.previous);
+					}}>
+					Preview
+				</button>
+				<button
+					type="button"
+					className="btn btn-light"
+					onClick={e => {
+						actions.getPeople(store.people.next);
+					}}>
+					Next
+				</button>
 			</div>
 		</div>
 	);
