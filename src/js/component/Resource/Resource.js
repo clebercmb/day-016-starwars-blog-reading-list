@@ -8,7 +8,6 @@ function Resource(props) {
 			<img src={"/img/" + props.img} className="card-img-top" alt="..." />
 			<div className="card-body">
 				<h6 className="card-title">{props.title}</h6>
-				{props.img}
 
 				<a href="/#" className="dataBank">
 					DATABANK
