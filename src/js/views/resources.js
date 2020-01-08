@@ -26,6 +26,7 @@ const Resources = props => {
 				<Resource
 					key={element.name}
 					title={element.name}
+					url={element.url}
 					img={
 						element.name
 							.split(" ")

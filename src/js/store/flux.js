@@ -15,7 +15,8 @@ const getState = ({ getStore, getActions, setStore }) => {
 			],
 			people: [],
 			vehicles: [],
-			planets: []
+			planets: [],
+			resource: null
 		},
 		actions: {
 			// Use getActions to call a function within a fuction
@@ -29,6 +30,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			},
 
 			getPeople: url => {
+				console.log("*****getPeople");
 				getActions().getFech("people", url);
 			},
 			getPlanets: url => {
@@ -40,12 +42,17 @@ const getState = ({ getStore, getActions, setStore }) => {
 				getActions().getFech("vehicles", url);
 			},
 
-			getFech: (character, url) => {
+			getFech: (key, url) => {
 				console.log("%%%%%%%getFech - Starting");
 				fetch(url)
 					.then(resp => resp.json())
-					.then(data => setStore({ [character]: data }));
+					.then(data => setStore({ [key]: data }));
 				console.log("%%%%%%%getFech - Ended");
+			},
+
+			getResource: url => {
+				console.log("*****getResource");
+				getActions().getFech("resource", url);
 			},
 
 			changeColor: (index, color) => {
