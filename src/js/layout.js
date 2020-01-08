@@ -7,7 +7,7 @@ import Home from "./views/home";
 import { Demo } from "./views/demo";
 import { Single } from "./views/single";
 import Resources from "./views/resources";
-import Resource from "./views/resource";
+import ResourceDetail from "./views/resourceDetail";
 import injectContext from "./store/appContext";
 
 import Header from "./component/Header/Header";
@@ -52,7 +52,7 @@ export const Layout = () => {
 						<Route exact path="/" component={Home} />
 						<Route path="/demo" component={Demo} />
 						<Route path="/single/:theid" component={Single} />
-						<Route path="/resources/:theid" component={Resource} />
+						<Route path="/resources/:theid" component={ResourceDetail} />
 						<Route path="/resources" component={Resources} />
 						<Route render={() => <h1>Not found!</h1>} />
 					</Switch>

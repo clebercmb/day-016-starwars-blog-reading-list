@@ -4,13 +4,12 @@ import { Context } from "../store/appContext";
 import ResourceContent from "../component/ResourceContent/ResourceContent";
 import "../../styles/resource.css";
 
-const Resource = props => {
-	console.log("*******View Resource");
+const ResourceDetail = props => {
+	console.log("*******ResourceView");
 	const { store, actions } = useContext(Context);
 	let url = "https://swapi.co/api/people/" + props.match.params.theid + "/";
-	//console.log(props);
 
-	if (store.resource == null || store.resource.url != url) {
+	if (store.resource === null || store.resource.url !== url) {
 		actions.getResource(url);
 		console.log(">>>>>3:");
 		console.log(store.resource);
@@ -19,7 +18,7 @@ const Resource = props => {
 
 	let img = null;
 	let name = null;
-	if (character != null) {
+	if (character !== null) {
 		img =
 			character.name
 				.split(" ")
@@ -45,4 +44,4 @@ Resource.propTypes = {
 	match: PropTypes.object
 };
 
-export default Resource;
+export default ResourceDetail;

@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import "./ResourceContent.css";
 
 function ResourceContent(props) {
-	console.log("*******ResourceContent*********");
+	console.log("*******ResourceContent Teste*********");
 	return (
 		<div className="card ResourceContent">
 			<img src={"/img/" + props.img} className="card-img-top" alt="..." />

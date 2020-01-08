@@ -1,5 +1,14 @@
+
+.ResourceContent {
+    height: 400px;
+    width: 600px;
+    object-fit: cover;
+    background: #282727;
+    color: #ddd;
+}
+
 .ResourceContent img {
-    height: 100%;
+    height: 80%;
     max-width: 100%;
     object-fit: cover;
     background: #282727;
