@@ -40,7 +40,7 @@ const ResourceDetail = props => {
 	);
 };
 
-Resource.propTypes = {
+ResourceDetail.propTypes = {
 	match: PropTypes.object
 };
 
