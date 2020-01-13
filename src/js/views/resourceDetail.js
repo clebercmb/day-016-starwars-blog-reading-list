@@ -5,7 +5,8 @@ import ResourceContent from "../component/ResourceContent/ResourceContent";
 import "../../styles/resource.css";
 
 const ResourceDetail = props => {
-	console.log("*******ResourceView");
+	console.log("*******ResourceDetail");
+
 	const { store, actions } = useContext(Context);
 	let url = "https://swapi.co/api/people/" + props.match.params.theid + "/";
 

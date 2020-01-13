@@ -45,6 +45,7 @@ const Resources = props => {
 	console.log(hasPrevious);
 	console.log(store.people.next);
 	console.log(hasNext);
+	actions.resetResource();
 
 	return (
 		<div className="resources">

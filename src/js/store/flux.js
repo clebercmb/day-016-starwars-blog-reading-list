@@ -55,6 +55,12 @@ const getState = ({ getStore, getActions, setStore }) => {
 				getActions().getFech("resource", url);
 			},
 
+			resetResource: () => {
+				const store = getStore();
+
+				if (store.resource != null) setStore({ resource: null });
+			},
+
 			changeColor: (index, color) => {
 				//get the store
 				const store = getStore();

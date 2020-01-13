@@ -13,9 +13,14 @@ function Resource(props) {
 
 	console.log(url);
 
+	function resetState(e) {
+		debugger;
+		console.log("Reset Sate");
+	}
+
 	return (
 		<div className="card cardResource">
-			<Link to={url}>
+			<Link to={url} onClick={e => resetSate(e)}>
 				<img src={"/img/" + props.img} className="card-img-top" alt="..." />
 			</Link>
 			<div className="card-body">
